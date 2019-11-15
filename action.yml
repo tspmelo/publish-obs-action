@@ -1,0 +1,24 @@
+name: 'Publish to OBS'
+description: 'Publish a new revision of the package in OBS.'
+inputs:
+  obs user:
+    description: 'username used to access OBS'
+    required: true
+  obs pass:
+    description: 'password used to access OBS'
+    required: true
+  obs email:
+    description: 'Email to use in the changelog and OBS config'
+    required: true
+  obs project:
+    description: 'The name of the OBS project'
+    required: true
+  obs package:
+    description: 'The name of the OBS package'
+    required: true
+  full name:
+    description: 'The name of the person listed in the changelog and revision'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
