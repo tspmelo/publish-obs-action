@@ -2,6 +2,11 @@
 
 This action will publish a new revision of the package in OBS.
 
+## Prerequisite
+
+To be able to generate the OBS changelog, you need to have a CHANGELOG file that
+follows the [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format.
+
 ## Inputs
 
 ### `obs user`
